@@ -11,6 +11,9 @@
 		BBBF313C29BF366700F9CDF5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BBBF313B29BF366700F9CDF5 /* RxCocoa */; };
 		BBBF313E29BF366700F9CDF5 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BBBF313D29BF366700F9CDF5 /* RxRelay */; };
 		BBBF314029BF366700F9CDF5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BBBF313F29BF366700F9CDF5 /* RxSwift */; };
+		BBBF314429BF373800F9CDF5 /* ApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF314329BF373800F9CDF5 /* ApiServiceProtocol.swift */; };
+		BBBF314729BF377C00F9CDF5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF314629BF377C00F9CDF5 /* User.swift */; };
+		BBBF314929BF37AE00F9CDF5 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF314829BF37AE00F9CDF5 /* ApiService.swift */; };
 		BBC54CFB29BF336100F5257A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC54CFA29BF336100F5257A /* AppDelegate.swift */; };
 		BBC54CFD29BF336100F5257A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC54CFC29BF336100F5257A /* SceneDelegate.swift */; };
 		BBC54CFF29BF336100F5257A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC54CFE29BF336100F5257A /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BBBF314329BF373800F9CDF5 /* ApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocol.swift; sourceTree = "<group>"; };
+		BBBF314629BF377C00F9CDF5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BBBF314829BF37AE00F9CDF5 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		BBC54CF729BF336100F5257A /* SampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC54CFA29BF336100F5257A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBC54CFC29BF336100F5257A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBBF314129BF372100F9CDF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF314229BF372700F9CDF5 /* Api */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BBBF314229BF372700F9CDF5 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF314829BF37AE00F9CDF5 /* ApiService.swift */,
+				BBBF314329BF373800F9CDF5 /* ApiServiceProtocol.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		BBBF314529BF377300F9CDF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF314629BF377C00F9CDF5 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BBC54CEE29BF336100F5257A = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +95,8 @@
 		BBC54CF929BF336100F5257A /* SampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				BBBF314529BF377300F9CDF5 /* Models */,
+				BBBF314129BF372100F9CDF5 /* Services */,
 				BBC54CFA29BF336100F5257A /* AppDelegate.swift */,
 				BBC54CFC29BF336100F5257A /* SceneDelegate.swift */,
 				BBC54CFE29BF336100F5257A /* ViewController.swift */,
@@ -155,8 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBF314429BF373800F9CDF5 /* ApiServiceProtocol.swift in Sources */,
+				BBBF314929BF37AE00F9CDF5 /* ApiService.swift in Sources */,
 				BBC54CFF29BF336100F5257A /* ViewController.swift in Sources */,
 				BBC54CFB29BF336100F5257A /* AppDelegate.swift in Sources */,
+				BBBF314729BF377C00F9CDF5 /* User.swift in Sources */,
 				BBC54CFD29BF336100F5257A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
