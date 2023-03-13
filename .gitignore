@@ -1,0 +1,29 @@
+*.xcworkspace
+
+# Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.pbxuser
+
+# Build generated
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Mac OS
+.DS_Store
+*~
+*.pyc
+xcschememanagement.plist
+
+# Localization (temporary files)
+LocalizationScripts/iOS.csv
+
+# Idea IDE
+.idea
+
+xcuserdata/
