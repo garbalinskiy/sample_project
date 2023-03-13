@@ -68,12 +68,12 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
-		BBBF314529BF377300F9CDF5 /* Models */ = {
+		BBBF314529BF377300F9CDF5 /* ApiModels */ = {
 			isa = PBXGroup;
 			children = (
 				BBBF314629BF377C00F9CDF5 /* User.swift */,
 			);
-			path = Models;
+			path = ApiModels;
 			sourceTree = "<group>";
 		};
 		BBC54CEE29BF336100F5257A = {
@@ -95,7 +95,7 @@
 		BBC54CF929BF336100F5257A /* SampleProject */ = {
 			isa = PBXGroup;
 			children = (
-				BBBF314529BF377300F9CDF5 /* Models */,
+				BBBF314529BF377300F9CDF5 /* ApiModels */,
 				BBBF314129BF372100F9CDF5 /* Services */,
 				BBC54CFA29BF336100F5257A /* AppDelegate.swift */,
 				BBC54CFC29BF336100F5257A /* SceneDelegate.swift */,

@@ -11,14 +11,14 @@ final class ApiService {
 }
 
 extension ApiService: ApiServiceProtocol {
-    func user(by id: UUID, _ callback: @escaping (User) -> Void) {
+    func user(by id: UUID, _ callback: @escaping (UserApiModel) -> Void) {
         dispatchQueue.asyncAfter(deadline: .now() + 1) { [weak self] in
             guard let self else {
                 return
             }
-            callback(User(
-                id: id,
-                name: self.randomUserName
+            callback(UserApiModel(
+                identificator: id,
+                fullName: self.randomUserName
             ))
         }
     }

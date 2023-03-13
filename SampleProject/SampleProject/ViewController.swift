@@ -1,5 +1,12 @@
 import UIKit
 
+///
+/// 1. Create a module VIPER style that will get User from ApiService
+/// 2. Module should not use callbacks and must know nothing about API
+///
+///
+///
+
 class ViewController: UIViewController {
     
     let apiService = ApiService()
