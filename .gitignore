@@ -26,4 +26,4 @@ LocalizationScripts/iOS.csv
 # Idea IDE
 .idea
 
-xcuserdata/
+xcuserdata/*
